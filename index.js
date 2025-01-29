@@ -6,10 +6,6 @@ const port = 3010;
 
 app.use(express.static('static'));
 
-//app.get('/', (req, res) => {
-//  res.sendFile(resolve(__dirname, 'pages/index.html'));
-//});
-
 require('dotenv').config();
 
 const isAdmin = process.env.IS_ADMIN === 'true';
